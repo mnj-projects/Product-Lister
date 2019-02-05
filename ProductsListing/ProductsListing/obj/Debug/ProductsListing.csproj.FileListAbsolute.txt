@@ -1,0 +1,9 @@
+D:\4th Year\DP\ProductsListing\ProductsListing\bin\Debug\ProductsListing.exe.config
+D:\4th Year\DP\ProductsListing\ProductsListing\obj\Debug\ProductsListing.csprojResolveAssemblyReference.cache
+D:\4th Year\DP\ProductsListing\ProductsListing\obj\Debug\ProductsListing.Form1.resources
+D:\4th Year\DP\ProductsListing\ProductsListing\obj\Debug\ProductsListing.Properties.Resources.resources
+D:\4th Year\DP\ProductsListing\ProductsListing\obj\Debug\ProductsListing.csproj.GenerateResource.Cache
+D:\4th Year\DP\ProductsListing\ProductsListing\bin\Debug\ProductsListing.exe
+D:\4th Year\DP\ProductsListing\ProductsListing\bin\Debug\ProductsListing.pdb
+D:\4th Year\DP\ProductsListing\ProductsListing\obj\Debug\ProductsListing.exe
+D:\4th Year\DP\ProductsListing\ProductsListing\obj\Debug\ProductsListing.pdb
