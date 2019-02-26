@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="e3fe791c-e835-4d3f-9d3e-3bd7a11591ba" name="UMLClassDiagram1" linkedPackageId="f1cdb3f5-28a5-4e78-af12-d5251da89efe" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="40c64163-e0d0-437d-aa6c-6d2a01ff8c83">
+      <profileInstance Id="20a7dd58-da23-438d-b7d1-514edd0610b2" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="988cbd74-910d-440a-95dd-8d15a5cb067b">
+      <profileInstance Id="bcf5c0a6-73a5-40c2-93e1-180c19da5f01" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="37aefd55-8b0e-4151-96ba-523eed4f7e66" name="ListBridge" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="b6d98b7b-8436-4470-b657-a9ad73daca0b" />
+        <suppliersInternal>
+          <interfaceRealization Id="0af7b9f1-a3bf-4a90-883d-bcbf3b5c1106">
+            <interfaceMoniker Id="c070da19-ba08-4e12-b3f1-4931341d807d" LastKnownName="Bridger" />
+            <elementDefinition Id="2db70478-f418-4248-a578-597b7f4b2ee4" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <targetEnds>
+          <association Id="834558c8-4a96-4be4-9042-da5d471b220a" isDerived="false" sourceEndRoleName="ListBridge" targetEndRoleName="VisList" isLeaf="false" isAbstract="false">
+            <interfaceMoniker Id="fc5324e2-b215-4937-a1e8-fb345dc5256c" LastKnownName="VisList" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="eb1f8742-74fe-47dc-8b56-0b90c667c499" name="ListBridge" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="d3243852-2f91-43c2-a0f8-df1ad6445299" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b0568a4e-f30b-4329-9a53-ff362bc8a2a0" name="VisList" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="55d8c1b0-f8fa-4ff9-9966-e89de59a363c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c0cea2ca-b541-4356-8ea4-0bb4bb6f539c" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="d07473d7-9cbb-4165-889e-8f324ecc4266" name="Vis" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="d3858c94-1109-4287-bfd0-eeca5300f525" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="8a929985-f43b-4b19-aab1-344aee19f798" name="ListBridge" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="06df2bbd-be30-4453-8cf5-2c48b28839de" />
+          </operation>
+          <operation Id="91a84fee-a4b8-4163-962d-a735510adefe" name="addData" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="42aa765c-76b2-4fea-b73a-771101bd20dc" />
+          </operation>
+          <operation Id="205a857b-936f-43a2-8d56-1a4798ba6c6d" name="addLine" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="0868cf2e-0297-4d02-a4c0-9f7694936921" />
+          </operation>
+          <operation Id="76fa2a73-3296-4264-9c47-b856f9452f9f" name="removeLine" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="98c04769-380c-4684-a951-c4bbd775717f" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="4efd6bfb-dc5e-4870-8d02-780ec23e5388" name="GridList" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="7ae1878a-5ef0-4b6a-bfce-aae11803feb9" />
+        <suppliersInternal>
+          <interfaceRealization Id="c2ff409f-dad2-4346-bc07-717f349c7565">
+            <interfaceMoniker Id="fc5324e2-b215-4937-a1e8-fb345dc5256c" LastKnownName="VisList" />
+            <elementDefinition Id="85b696ec-fc6b-4874-912c-eec2daa8e262" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property Id="6c542a85-1ad5-46e2-9b9e-849a1d90884e" name="grid" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="5117d888-1b2b-4f73-8779-8ec19975c17c" />
+          </property>
+          <property Id="39d1b790-f4cd-4d1c-a437-52b278f631b5" name="dtable" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="5cf7ce3d-ac1a-46e0-b9b9-4463768bb0d2" />
+          </property>
+          <property Id="89ddcbc6-8c7b-46bc-a792-68ce6e099aa9" name="gAdapter" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="cf42f27c-b141-48c3-80fa-1801975a316c" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="da4ff9cb-4578-45d5-b556-e33eda77a717" name="addLine" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="2a3b6db1-4eed-4e7b-80c7-d166b44eeb9f" />
+          </operation>
+          <operation Id="f6c3af98-c83f-480c-b079-0c4eb317b34f" name="removeLine" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="612ca376-d3c4-4997-91a9-d39dfe6c50e2" />
+          </operation>
+          <operation Id="020d5e25-5224-4885-865f-28d5fa3f9eb9" name="GridList" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="85f4bb8e-be04-4f1a-8873-aa8faed39062" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="36e081c6-fb64-4a09-a1f7-b5523d31f904" name="ProductList" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="5196c929-8a0b-47b9-afa8-a5d96656a08a" />
+        <suppliersInternal>
+          <interfaceRealization Id="e3b49c25-261e-4710-8440-92c485119cf2">
+            <interfaceMoniker Id="fc5324e2-b215-4937-a1e8-fb345dc5256c" LastKnownName="VisList" />
+            <elementDefinition Id="6c319b86-dcf0-431c-9c6f-74bec8ccd0da" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property Id="9659cdd0-1882-42ba-add2-0901befe6ff9" name="List" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f87f3c60-4037-4027-b5a2-eb409ff5dcff" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="22374319-4dde-4edb-accc-dc6fdd0e93b6" name="addLine" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="1b026bfe-0b02-4aa1-bc8b-b2a30a0f7623" />
+          </operation>
+          <operation Id="c7751c29-1366-4d05-a792-dec039067355" name="removeLine" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c0d12766-2648-42a4-bbd6-f821d1e132d4" />
+          </operation>
+          <operation Id="d43d7f1b-26fc-4c66-9d57-3f7e42b2db4e" name="ProductList" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="4c126e0a-09c8-4650-a3d8-fbdff6acfcd8" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="fc5324e2-b215-4937-a1e8-fb345dc5256c" name="VisList" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f5b31a49-82bc-4133-bbab-0a39c8384bad" />
+        <ownedOperations>
+          <operation Id="ec433453-b664-4cf5-998a-04581c29aa6b" name="addLine" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="3fe6e62a-c6ab-4fc1-aa4c-d587c65e6286" />
+          </operation>
+          <operation Id="e7b907fd-a6f1-41ea-b4aa-e16d575cb6da" name="removeLine" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="b05de0d4-13eb-4030-96ea-471484f57d88" />
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="c070da19-ba08-4e12-b3f1-4931341d807d" name="Bridger" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9059fbb1-5787-4439-878b-3967d0a80f2f" />
+        <ownedOperations>
+          <operation Id="43509805-4348-484c-9715-f0773be7fde9" name="addData" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="5189ce12-ed38-411b-9186-388353554b62" />
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="f1cdb3f5-28a5-4e78-af12-d5251da89efe" name="ModelingProject2">
+    <elementDefinition Id="1c244b2c-bbdd-4097-b77f-2d8a851dc8a0" />
+  </package>
+</logicalClassDesignerModel>

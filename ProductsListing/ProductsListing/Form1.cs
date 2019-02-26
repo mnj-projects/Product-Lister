@@ -43,7 +43,41 @@ namespace ProductsListing
             Bridger gbr = new ListBridge(gridList);
             //put the data into the grid display
             gbr.addData(products);
+        
         }
+
+        public void sortNow()
+        {
+            products = new ArrayList();
+            readFile(products);
+            //string[] pro = File.ReadAllLines(@"products.txt", Encoding.UTF8);
+            //products.AddRange(pro);
+            prodList = new ProductList(lsProd);
+            //Bridge to product VisList
+            Bridger lbr = new SortBridge(prodList);
+            //put the data into the product list
+            lbr.addData(products);
+            //create the grid VisList
+            gridList = new GridList(grdProd);
+            //Bridge to the grid list
+            Bridger gbr = new SortBridge(gridList);
+            //put the data into the grid display
+            gbr.addData(products); 
+
+
+        }
+
+        public void clearData()
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            lsProd.Items.Clear();
+            sortNow();
+        }
+
         private void readFile(ArrayList products)
         {
             csFile fl = new csFile("products.txt");
